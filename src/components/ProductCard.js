@@ -3,7 +3,8 @@ import { Button, Card} from 'react-bootstrap';
 import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import { useCart } from 'react-use-cart';
 import { BsCartPlus } from 'react-icons/bs';
-import { Link } from  "@reach/router";
+import { Link } from 'react-router-dom';
+// import { Link } from  "@reach/router";
 
 const ProductCard = (props) => {
     let { img,location, price, title, id} = props.data;
