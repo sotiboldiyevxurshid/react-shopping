@@ -46,7 +46,33 @@ const Header = () => {
             <b>Create</b>
           </Navbar.Brand>
         </Link>
-      
+        {/* <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Change language
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#!">
+                Uzbek
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#!">
+                English
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#!">
+                Russian
+              </a>
+            </li>
+          </ul>
+        </div> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -68,7 +94,7 @@ const Header = () => {
               to="/cart"
               style={{ textDecoration: "none", gap: "5px" }}
               className={`${
-                darkMode ? "text-dark-succes" : "text-light-primary"
+                darkMode ? "text-dark-primary" : "text-light-primary"
               } d-flex align-items-center`}
             >
               <BiCart style={{ textDecoration: "none" }} size="2rem" />
